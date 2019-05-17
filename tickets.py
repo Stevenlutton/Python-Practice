@@ -14,9 +14,10 @@ amt_due = tickets_wanted * TICKET_PRICE
 print("The total due is ${}".format(amt_due))
 
 should_proceed = input("Would you like to purchase?   Y/N  ")
-    if should_proceed.lower() == "y" :
-        print("SOLD!")
-tickets_remaining -= tickets_wanted
+
+if should_proceed.lower() == "y":
+    print("SOLD!")
+    tickets_remaining -= tickets_wanted
 
 else:
     print("Thank you anyways, {}".format(name))
